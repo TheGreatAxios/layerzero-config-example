@@ -1,0 +1,1 @@
+# LayerZero setup for SKALE Chains
