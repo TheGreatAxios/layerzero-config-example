@@ -4,13 +4,13 @@ import type { OAppOmniGraphHardhat, OmniPointHardhat } from '@layerzerolabs/tool
 const europaTestnetContract: OmniPointHardhat = {
     eid: EndpointId.SKALE_V2_TESTNET,
     contractName: 'AltSKALEToken',
-    address: '0xBFae6C0130c51669a9db88d0e487d029ee5A1c58',
+    address: '',
 }
 
 const amoyContract: OmniPointHardhat = {
     eid: EndpointId.AMOY_V2_TESTNET,
     contractName: 'SKALEToken',
-    address: '0xf8DDe18493f9B4993020914c71A17823520F33b9',
+    address: '',
 }
 
 
