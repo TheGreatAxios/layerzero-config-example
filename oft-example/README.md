@@ -71,3 +71,18 @@ npx hardhat bridge --origin amoy --destination europatestnet --amount 3 --networ
 > Bridging an asset has a cost that is paid on the origing chain of the bridging transaction. 
 > If the bridging origing chain is not a SKALE chain the bridging fee will be paid with the native gas token of the chain
 > If the bridging origin chain is a SKALE chain the bridging fee will be paid in SKL tokens 
+
+
+> [!WARNING]  
+> If facing the error: `Missing revert data in call exception; Transaction reverted without a reason string`
+> <details><summary> Solution</summary> 
+> 
+> 1. Check the required [LayerZero DVNs](https://docs.layerzero.network/v2/developers/evm/technical-reference/dvn-addresses)
+> 1. Set the correct connections and DVNs on the `const config: OAppOmniGraphHardhat` object  
+> 2. Run the command:  
+> ```bash
+> npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts --safe
+> ```
+> </details>
+
+
